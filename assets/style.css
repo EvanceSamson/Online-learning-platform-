@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: flex;
+flex-direction: column;
+gap: 15px;
+width: 90%;
+background-color: white;
+}
+input{
+    margin: 0px;
+    border: 1px solid rgba(182, 22, 88, 0.4);
+    text-indent: 15px;
+    gap: 10px;
+ 
+}
+a{
+    border: 1px solid rgba(98, 11, 211, 0.589);
+    text-align: center;
+    text-decoration: none;
+    color: rgba(22, 1, 1, 0.815);
+    border-radius: 10px;
+   
+}
+
+
+.input-type{
+    height: 25px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.main-container{
+    display:flex;
+    gap: 18px;
+
+}
+
+input[type=radio]{
+ height: 15px;
+ width: 15px;
+    }
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+input[type=checkbox]{
+        height: 15px;
+        width: 15px;
+}
+
+.form-container{
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+}
+.side-container{
+    background-color: rgba(54, 160, 202, 0.521);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+
+.radio-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+   width: 20%;
+}
+button:hover{
+    transition: 0.5s ease;
+    background-color: green;
+}
+
+.input-icon{ font-size: 15px;
+    }
+
+.input-icon:hover{
+    transition: 0.5s ease;
+  }
+
+.block-c{
+    text-align: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+h1{
+    color: brown;
+    font-size: 18px;
+    font-weight: 350;
+}
+p{
+    font-size: 14px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navbar{
+    background: rgba(5, 5, 145, 0.863);
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+ .navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+   .logo a{
+      font-size: 35px;
+      font-weight:600;
+      color: white;
+   }
+   li{
+    list-style: none;
+    display: inline-block;
+   }
+   li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+   }
+   .logo button{
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 99px;
+  }
+
+  .logo button a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  @media (max-width:600px){
+    body{
+      padding: 20px;
+    }
+    p{
+      font-size: 0.85rem;
+    }
+    .main-container{
+      padding: 10px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .card{
+      width: 100%;
+    }
+  }

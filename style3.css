@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-wrapper {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#progress-bar {
+    height: 8px;
+    background: #00c851;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.quiz-card {
+    text-align: center;
+}
+
+#question-number {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+}
+
+.option {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+}
+
+.option.selected {
+    background: rgba(0, 128, 255, 0.7);
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.result-card h2 {
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.result-card button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #00c851;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.result-card button:hover {
+    background: #007e33;
+}
+
+.hidden a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: orange;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-wrapper">
+        <header>
+            <h1>Master Quiz Challenge</h1>
+            <div id="progress-bar"></div>
+        </header>
+        <main id="quiz-section">
+            <div class="quiz-card">
+                <h2 id="question-number"></h2>
+                <p id="question-text"></p>
+                <ul class="options-list">
+                    <li><button class="option" onclick="selectOption(0)"></button></li>
+                    <li><button class="option" onclick="selectOption(1)"></button></li>
+                    <li><button class="option" onclick="selectOption(2)"></button></li>
+                    <li><button class="option" onclick="selectOption(3)"></button></li>
+                </ul>
+                <div class="feedback hidden" id="feedback"></div>
+                <button id="next-button" onclick="goToNextQuestion()" disabled>Next</button>
+            </div>
+        </main>
+        <footer id="result-section" class="hidden">
+            <div class="result-card">
+                <h2>Your Results</h2>
+                <p>You answered <span id="correct-answers"></span> Out of 10 correctly!</p>
+                <p><strong>Final Score:</strong><span id="final-score"></span></p>
+                <button onclick="restartQuiz()">Play Again</button>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
